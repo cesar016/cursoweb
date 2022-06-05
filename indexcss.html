@@ -3,46 +3,40 @@
     
     <head>    
         <title>Curso Web</title>
+        <style>
+            h2{
+                color: brown;
+            }
+            *{
+            color: violet; 
+            }
+            .fondoverde{
+                background-color: green;
+                color:chartreuse;
+            }
+            #id1{
+                background-color: black;
+            }
+
+        </style> <!--selector universal aplica a todo menos a lo que tiene un formato definido-->
     </head>
 
         <body>
-            <h1>Hola!</h1>
-            <h1>Chau!</h1>
-            <hr>
-            <p>
+<h2>
+    texto
+</h2>
+          
+            <p style="color:blue">
                     Esto es un parrafo. 
                     <br>
-                    Ya estoy aprendiendo HTML
+                   <span style="color: orange">Ya estoy</span> aprendiendo HTML 
             </p>
-            <div>
-                <h2>Titulo en H1</h2>
-                <div>
-                        <h4>Texto del titulo en H4</h4>
-                </div>
-                <img src="img\img_001.jpg" height="100", width="100">
-                <img src="\cursoweb1\img\img_001.jpg" height="100", width="100">
-            </div>
+            
+         
             <hr>
             <div>
-                <!--Esto es un comentario-->
-                <h2>Formulario</h2>
-                <form action="index.html" method="GET">
-                    <label>Campo 1</label>
-                    <input type="text" name="txt1">
-                    <br>
-                    <label>Campo 2</label>
-                    <input type="number" name="txt2">
-                    <br>
-                    <label>Campo 3</label>
-                    <input type="password" name ="txt3">
-                    <br>
-                    <label>Campo 4</label>
-                    <input type="email" name="txt4">
-                    <br>
-                    <label>Campo 5</label>
-                    <input type="color" name="txt5">
-                    <button>Enviar</button>
-                </for>
+       
+             
             </div>
             <hr>
             <hr>
@@ -59,8 +53,8 @@
                     </thead>
                     <tbody>
                         <tr> <!--Filas-->
-                            <th> 1 </th> <!--Columnas-->
-                            <th> uno </th> 
+                            <th class="fondoverde"> 1 </th> <!--Columnas-->
+                            <th > uno </th> 
                             <th> primera </th> 
                             <th> one </th>                            
                         </tr>
@@ -72,7 +66,7 @@
                         </tr>
                         <tr> <!--Filas-->
                             <th> 3 </th> <!--Columnas-->
-                            <th> tres </th> 
+                            <th id="id1"> tres </th> 
                             <th> tercera</th>  
                             <th> three </th>                           
                         </tr>
@@ -81,9 +75,6 @@
             </div>
         </body>
 
-        <footer>
-            <progress  max="100" value="70">70% </progress>
-        </footer>
   
 
 </html>

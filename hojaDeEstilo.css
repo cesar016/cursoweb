@@ -1,0 +1,21 @@
+h2{
+    color: brown;
+}
+*{
+color: violet; 
+}
+.fondoverde{
+    background-color: green;
+    color:chartreuse;
+}
+#id1{
+    background-color: black;
+}
+
+@media screen and (max-with: 500px){
+
+    h2{
+        color: red;
+    }
+    
+}
