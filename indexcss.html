@@ -7,8 +7,8 @@
             h2{
                 color: brown;
             }
-            *{
-            color: violet; 
+            *{ /*selector universal aplica a todo menos a lo que tiene un formato definido*/
+                color: violet; 
             }
             .fondoverde{
                 background-color: green;
@@ -17,63 +17,59 @@
             #id1{
                 background-color: black;
             }
-
-        </style> <!--selector universal aplica a todo menos a lo que tiene un formato definido-->
+        </style> 
     </head>
 
-        <body>
-<h2>
-    texto
-</h2>
+    <body>
+
+        <h2>
+            Ejemplo de una tabla con CSS
+        </h2>
           
-            <p style="color:blue">
-                    Esto es un parrafo. 
-                    <br>
-                   <span style="color: orange">Ya estoy</span> aprendiendo HTML 
-            </p>
-            
-         
-            <hr>
-            <div>
-       
-             
-            </div>
-            <hr>
-            <hr>
-            <div>
+
+        <div>
                 <!--En desuso el width y border de esta manera-->
-                <table width="100%" border="2">
-                    <thead>
-                        <tr> <!--Filas-->
-                            <th> Col 1 </th> <!--Columnas-->
-                            <th> Col 2 </th> 
-                            <th colspan="2"> Col 3 </th>   
+            <table width="100%" border="2">
+
+                <thead> <!--Encabezado de la tabla-->
+                     <tr> <!--Filas-->
+                        <th> Col 1 </th> <!--Columnas-->
+                        <th> Col 2 </th> 
+                        <th colspan="2"> Col 3 </th>   
                             <!--El colspan agrupa el titulo en dos columnas-->                         
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr> <!--Filas-->
-                            <th class="fondoverde"> 1 </th> <!--Columnas-->
-                            <th > uno </th> 
-                            <th> primera </th> 
-                            <th> one </th>                            
-                        </tr>
-                        <tr> <!--Filas-->
-                            <th> 2 </th> <!--Columnas-->
-                            <th> dos </th> 
-                            <th> seguunda </th>   
-                            <th> two </th>                          
-                        </tr>
-                        <tr> <!--Filas-->
-                            <th> 3 </th> <!--Columnas-->
-                            <th id="id1"> tres </th> 
-                            <th> tercera</th>  
-                            <th> three </th>                           
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </body>
+                     </tr>
+                </thead>
+                
+                <tbody>
+
+                    <tr> <!--Filas-->
+                        <th class="fondoverde"> 1 </th> <!--Columnas-->
+                        <th > uno </th> 
+                        <th> primera </th> 
+                        <th> one </th>                            
+                    </tr>
+                    
+                    <tr> <!--Filas-->
+                        <th> 2 </th> <!--Columnas-->
+                        <th> dos </th> 
+                        <th> seguunda </th>   
+                        <th> two </th>                          
+                    </tr>
+                    
+                    <tr> <!--Filas-->
+                        <th> 3 </th> <!--Columnas-->
+                        <th id="id1"> tres </th> 
+                        <th> tercera</th>  
+                        <th> three </th>                           
+                    </tr>
+
+                </tbody>
+
+            </table>
+            
+        </div>
+        
+    </body>
 
   
 

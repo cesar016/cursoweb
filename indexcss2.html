@@ -3,65 +3,60 @@
     
     <head>    
         <title>Curso Web</title>
-        <link rel="stylesheet" href="hojadeEstilo.css">
-        <style>
-
-
-        </style> <!--selector universal aplica a todo menos a lo que tiene un formato definido-->
+        <link rel="stylesheet" href="css\hojadeEstilo.css"> <!--Vinculo con el archivo css-->
     </head>
 
-        <body>
+     <body>         
 
-          
-            <p style="color:blue">
-                    Esto es un parrafo. 
-                    <br>
-                   <span style="color: orange">Ya estoy</span> aprendiendo HTML 
-            </p>
-            
-         
-            <hr>
-            <div>
-       
-             
-            </div>
-            <hr>
-            <hr>
+             <h2>
+                Ejemplo de una tabla con el CSS en otro archivo
+             </h2>
+
             <div>
                 <!--En desuso el width y border de esta manera-->
                 <table width="100%" border="2">
-                    <thead>
+                   
+                    <thead> <!--Encabezado de la tabla-->
+
                         <tr> <!--Filas-->
                             <th> Col 1 </th> <!--Columnas-->
                             <th> Col 2 </th> 
                             <th colspan="2"> Col 3 </th>   
                             <!--El colspan agrupa el titulo en dos columnas-->                         
                         </tr>
-                    </thead>
-                    <tbody>
-                        <tr> <!--Filas-->
-                            <th class="fondoverde"> 1 </th> <!--Columnas-->
-                            <th > uno </th> 
-                            <th> primera </th> 
-                            <th> one </th>                            
-                        </tr>
-                        <tr> <!--Filas-->
-                            <th> 2 </th> <!--Columnas-->
-                            <th> dos </th> 
-                            <th> seguunda </th>   
-                            <th> two </th>                          
-                        </tr>
-                        <tr> <!--Filas-->
-                            <th> 3 </th> <!--Columnas-->
-                            <th id="id1"> tres </th> 
-                            <th> tercera</th>  
-                            <th> three </th>                           
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </body>
 
+                    </thead>
+
+                    <tbody> <!--Cuepo de la tabla-->
+
+                        <tr> <!--Filas-->
+                            <td class="fuenteGrande fondoverde"> 1 </td> <!--Columnas-->
+                            <td >Uno</td> 
+                            <td>Primera</td> 
+                            <td>One</td>                            
+                        </tr>
+
+                        <tr> <!--Filas-->
+                            <td>2</td>
+                            <td>Dos</td> <!--Columnas-->
+                            <td>Segunda</td>   
+                            <td>Two</td>                          
+                        </tr>
+
+                        <tr> <!--Filas-->
+                            <td class="fondoverde fuenteGrande">3</td>
+                            <td>Tres</td> <!--Columnas-->
+                            <td id="idFondoNegro">Tercera</td> 
+                            <td id="idFondoNegro" class="fondoVerde" style="color:red">Three</td>                          
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </body>
   
 
 </html>

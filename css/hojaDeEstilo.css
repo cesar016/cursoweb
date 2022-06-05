@@ -1,0 +1,45 @@
+h2{
+    color: brown;
+}
+
+/*Selector universal*/
+*{
+    color: violet; 
+}
+
+/*Selector de clase*/
+.fondoverde{
+    background-color: green;
+    color:chartreuse;
+}
+
+.fuenteGrande{
+	font-size: 30px; 
+	color:rgb(217, 203, 0);
+}
+
+/*Selector por id*/
+#idFondoNegro{
+    background-color: black;
+}
+
+/* Esto es para que la web sea responseve */
+@media screen and (max-width: 500px){
+	h2{
+		color: green;
+	}
+	.fuenteGrande{
+		font-size: 10px; 
+		color:rgb(217, 203, 0);
+	}
+}
+
+@media screen and (max-width: 200px){
+	h2{
+		color: rgb(10, 13, 202);
+	}
+	.fuenteGrande{
+		font-size: 10px; 
+		color:rgb(217, 203, 0);
+	}
+}
